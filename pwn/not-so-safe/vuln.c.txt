@@ -1,0 +1,30 @@
+   1  │ #include <stdio.h>
+   2  │
+   3  │ int factorial(int n) {
+   4  │ 	if (n == 0 || n == 1) {
+   5  │     	return 1;
+   6  │ 	} else {
+   7  │     	return n * factorial(n - 1);
+   8  │ 	}
+   9  │ }
+  10  │
+  11  │ int callRustCode() {
+  12  │ //	printf("To be implemented!");
+  13  │ 	return -1;
+  14  │ }
+  15  │
+  16  │ int doStuff(char *buffer) {
+  17  │ //	printf("To be implemented!");
+  18  │ 	return -1;
+  19  │ }
+  20  │ int main() {
+  21  │ 	printf("Check this factorial program out!\r\n");
+  22  │ 	int bruh = factorial(4);
+  23  │ 	char buffer[8];
+  24  │ 	printf("Enter your name: ");
+  25  │ 	callRustCode();
+  26  │ 	gets(buffer);
+  27  │ 	doStuff(buffer);
+  28  │ 	printf("Hello, %s!\n The answer is %d", buffer, bruh);
+  29  │ 	return 0;
+  30  │ }
